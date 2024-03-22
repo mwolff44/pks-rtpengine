@@ -2,13 +2,13 @@ FROM debian:bookworm-slim
 
 LABEL maintainer="Mathias WOLFF <mathias@celea.org> (https://www.pyfreebilling.com/)"
 
-ENV REFRESHED_AT 2024-01-10
+ENV REFRESHED_AT 2024-02-20
 ENV VERSION 1.0.1
 
 ENV DEBIAN_FRONTEND noninteractive
 
 ENV DIST="bookworm"
-ENV REL="12.1" 
+ENV REL="12.2" 
 
 RUN apt update -y && apt install wget curl iproute2 -y
 RUN wget https://rtpengine.dfx.at/latest/pool/main/r/rtpengine-dfx-repo-keyring/rtpengine-dfx-repo-keyring_1.0_all.deb && \
